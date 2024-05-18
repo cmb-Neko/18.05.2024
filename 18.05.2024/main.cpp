@@ -2,12 +2,15 @@
 using namespace std;
 
 int main() {
-	int arr[10];
-
-	for (int i = 1; i <= 10; i++) {
-		arr[i] = i;
+	int input, perimeter, arr[5];
+	perimeter = 0;
+	for (int i = 1; i <= 5; i++) {
+		cout << "Enter " << i << " side: ";
+		cin >> input;
+		arr[i] = input;
 	}
-	for (int i = 10; i >= 1; i--) {
-		cout << arr[i];
+	for (int i = 1; i <= 5; i++) {
+		perimeter += arr[i];
 	}
+	cout << perimeter;
 }
