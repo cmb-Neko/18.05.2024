@@ -2,17 +2,12 @@
 using namespace std;
 
 int main() {
-	int input, sum, arr[7];
-	sum = 0;
-	
-	for (int i = 1; i <= 6; i++) {
-		cout << "Enter profit for " << i << " month: ";
-		cin >> input;
-		arr[i] = input;
-	}
-	for (int i = 1; i <= 6; i++) {
-		sum += arr[i];
-	}
+	int arr[10];
 
-	cout << sum << endl;
+	for (int i = 1; i <= 10; i++) {
+		arr[i] = i;
+	}
+	for (int i = 10; i >= 1; i--) {
+		cout << arr[i];
+	}
 }
